@@ -1,0 +1,56 @@
+\documentclass[landscape,a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{tikz}
+\geometry{tmargin=.5cm,bmargin=.5cm,
+lmargin=.5cm,rmargin=.5cm}
+
+\usepackage{mathrsfs}
+\usepackage[scr=rsfs,cal=boondox]{mathalfa}
+
+\PassOptionsToPackage{dvipsnames,svgnames}{xcolor}
+\usepackage{niceframe}
+
+\setlength{\columnseprule}{0.4pt}
+\columnwidth=0.3\textwidth
+
+\def\bitchname{{name\_of\_bitch}} % place 'Bitch name' here
+\def\dateofcert{\today} % use your date or current one
+\def\nameofcouncilmember{{Neque\;Porro\;Quisquam\;the\;3rd}}
+
+\begin{document}
+\pagecolor{yellow!10}
+\centering
+\begin{minipage}{1.0\textwidth}
+\font\border=umrandb
+\generalframe
+{\border \char113} % up left
+{\border \char109} % up
+{\border \char112} % up right
+{\border \char108} % left 
+{\border \char110} % right
+{\border \char114} % lower left
+{\border \char111} % bottom
+{\border \char115} % lower right
+{\centering
+  \includegraphics[width=0.2\textwidth]{images/seal_of_certification.png}
+  \includegraphics[width=0.2\textwidth]{images/backgroundless_ungrateful.png}\\[0.5cm]
+  \textsc{\Large This document is a official proof that}\\[0.5cm]
+  \textsc{\Large on} {\Large {\dateofcert}}\\[1cm]
+  
+  {\huge \itshape \bitchname}\\[1cm]
+  
+  \textsc{\Large has officially been found to be proven}\\[1cm]
+  
+  {\LARGE \itshape Ungrateful Bitch}\\[1cm]
+  
+  \begin{minipage}{0.5\textwidth}
+    \large
+      \emph{Council member:}
+      \LARGE{$$\mathcal{\nameofcouncilmember}$$}
+      \vspace*{1cm}
+  \end{minipage}
+}
+\end{minipage}
+
+\end{document}
